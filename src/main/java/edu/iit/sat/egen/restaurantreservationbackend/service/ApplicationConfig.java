@@ -29,6 +29,7 @@ public class ApplicationConfig extends Application {
      * If required, comment out calling this method in getClasses().
      */
     private void addRestResourceClasses(Set<Class<?>> resources) {
+        resources.add(edu.iit.sat.egen.restaurantreservationbackend.NewCrossOriginResourceSharingFilter.class);
         resources.add(edu.iit.sat.egen.restaurantreservationbackend.service.CustomerFacadeREST.class);
         resources.add(edu.iit.sat.egen.restaurantreservationbackend.service.NewCrossOriginResourceSharingFilter.class);
         resources.add(edu.iit.sat.egen.restaurantreservationbackend.service.OwnerFacadeREST.class);

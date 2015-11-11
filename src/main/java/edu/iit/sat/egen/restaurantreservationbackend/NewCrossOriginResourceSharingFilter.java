@@ -3,9 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package edu.iit.sat.egen.restaurantreservationbackend.service;
+package edu.iit.sat.egen.restaurantreservationbackend;
 
-import edu.iit.sat.egen.restaurantreservationbackend.*;
 import javax.ws.rs.container.ContainerRequestContext;
 import javax.ws.rs.container.ContainerResponseContext;
 import javax.ws.rs.container.ContainerResponseFilter;

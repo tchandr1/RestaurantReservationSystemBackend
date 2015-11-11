@@ -59,8 +59,9 @@ public class Customer implements Serializable {
     private String arrivaltime;
     @Column(name = "peoplecount")
     private Integer peoplecount;
+    @Size(max = 10)
     @Column(name = "phonenumber")
-    private Integer phonenumber;
+    private String phonenumber;
     // @Pattern(regexp="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?", message="Invalid email")//if the field contains email address consider using this annotation to enforce field validation
     @Size(max = 40)
     @Column(name = "email")
@@ -123,11 +124,11 @@ public class Customer implements Serializable {
         this.peoplecount = peoplecount;
     }
 
-    public Integer getPhonenumber() {
+    public String getPhonenumber() {
         return phonenumber;
     }
 
-    public void setPhonenumber(Integer phonenumber) {
+    public void setPhonenumber(String phonenumber) {
         this.phonenumber = phonenumber;
     }
 
